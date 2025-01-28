@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/*共通部分*/
+
+head{
+    font-size:100%;
+}
+
+body{
+    font-family: "Noto Serif JP";
+    line-height: 1.5;
+    color: #2bad4c;
+
+}
+
+.align-center{
+    text-align: center;
+}
+
+h1{
+    padding: 20px;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+h2{
+    color:#1111;
+    font-size: 75px;
+
+}
+
+div{
+    text-align: center;
+}
