@@ -8,8 +8,9 @@ head{
 
 body{
     font-family: "Noto Serif JP";
-    line-height: 1.5;
-    color: #2bad4c;
+    line-height: 2;
+    color: #ffff;
+    background-color: #5E3819;
 
 }
 
@@ -18,7 +19,13 @@ body{
 }
 
 h1{
-    padding: 20px;
+    padding: 10px;
+    background-color:#1F2F0A ;
+}
+
+nav{
+    padding: 10px;
+    background-color:#404B21 ;
 }
 
 .main-nav{
@@ -28,12 +35,22 @@ h1{
     list-style: none;
 }
 
-h2{
-    color:#1111;
-    font-size: 75px;
 
-}
 
 div{
     text-align: center;
+   
+}
+
+.example{
+    position:relative;
+}
+
+.example p{
+font-size: 50px;
+position:absolute;
+color: black;
+top: 0;
+left: 50%;
+transform: translate(-50%,50%);
 }
