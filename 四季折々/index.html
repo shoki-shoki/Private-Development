@@ -25,12 +25,13 @@
 <body>
     <h1>四季折々</h1>
 
+<div class="lay">
     <!--cssグリッドてタイル表示-->
     <main class="wrapper grid">
-        <div class="item"><img src="images/1.haru/moyosi/sakura2.jpg" alt=""><p>春</p></div>
-        <div class="item"><img src="images/2.natu/moyosi/umi2.jpg" alt=""><p>夏</p></div>
-        <div class="item"><img src="images/3.aki/moyosi/momizi2.jpg" alt=""><p>秋</p></div>
-        <div class="item"><img src="images/4.huyu/moyosi/yuki2.jpg" alt=""><p>冬</p></div>
+        <div class="item1"><img src="images/1.spring/event/sakura2.jpg" alt=""><p>春</p></div>
+        <div class="item2"><img src="images/2.summer/event/umi2.jpg" alt=""><p>夏</p></div>
+        <div class="item3"><img src="images/3.autumn/event/momizi2.jpg" alt=""><p>秋</p></div>
+        <div class="item4"><img src="images/4.winter/event/yuki2.jpg" alt=""><p>冬</p></div>
     </main>
 
     
@@ -39,7 +40,7 @@
         <h2>目次</h2>
         
         <!--春-->
-        <div class="haru">
+        <div class="spring">
         <details>
             <summary>【春】</summary>
                 <details>
@@ -58,7 +59,7 @@
         </div>
 
         <!--夏-->
-        <div class="natu">
+        <div class="summer">
         <details>
             <summary>【夏】</summary>
             <details>
@@ -76,7 +77,7 @@
         </details>
             
         <!--秋-->
-        <div class="aki">
+        <div class="autumn">
         <details>
             <summary>【秋】</summary>
             <details>
@@ -94,7 +95,7 @@
         </details>
   
         <!--冬-->
-        <div class="huyu">
+        <div class="winter">
         <details>
             <summary>【冬】</summary>
             <details>
@@ -111,6 +112,15 @@
             </details>
         </details>
     </div>
+</div>
+<br>
+<!--検索フォーム　※ドメインないと検索機能使えない-->
+<form action="http://www.google.co.jp/search" method="get">
+    <input type="search" name="search" placeholder="キーワードを入力">
+    <input type="submit" name="submit" value="検索">
+</form>
+
+<a href="file:///E:/Programing/Private%20development/%E5%9B%9B%E5%AD%A3%E6%8A%98%E3%80%85/index.html">TOPページへ</a>
 
     
 </body>
