@@ -48,8 +48,8 @@ input{
 }
 
 /* 目次のスタイル */
-.mokuji {
-    width: 10%; /* 2:1 の比率 */
+.toc_container {
+    width: 15%; /* 2:1 の比率 */
     padding: 20px;
     text-align:start;
     margin-top:-10px ;
