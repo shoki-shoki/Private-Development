@@ -4,7 +4,7 @@
 /* bodyの背景とフォントを変更 */
 body{
     font-family: Noto Serif JP;
-    background-color:#D5F4D5 ;
+    background-color:#e74727 ;
 }
 
 
@@ -75,8 +75,8 @@ input{
 /* 目次ボタンの編集 */
 label{
     border: 1px solid gray;
-    background-color: #45864A;
-    color: white;
+    background-color: #D6CA5B;
+    color: black;
     padding: 10px;
     width: auto;
 }
@@ -101,19 +101,19 @@ li{
 }
 
 #tocopen:checked + .toc_container {
-    color: white;
+    color: black;
     display: block;
     margin: 9px auto;
     padding: 45px;
     width: 300px;
     border: 1px solid gray;   
-    background-color: #45864A;
+    background-color: #D6CA5B;
 }
 
 
 
 h1{
-    background-color:#4A8498;
+    background-color:#ee8975 ;
     height: 100px;
     font-family: Noto Serif JP;
     text-align: center;

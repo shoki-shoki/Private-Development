@@ -75,8 +75,8 @@ input{
 /* 目次ボタンの編集 */
 label{
     border: 1px solid gray;
-    background-color: #45864A;
-    color: white;
+    background-color: #ADDAD0;
+    color: black;
     padding: 10px;
     width: auto;
 }
@@ -101,19 +101,19 @@ li{
 }
 
 #tocopen:checked + .toc_container {
-    color: white;
+    color: black;
     display: block;
     margin: 9px auto;
     padding: 45px;
     width: 300px;
     border: 1px solid gray;   
-    background-color: #45864A;
+    background-color: #ADDAD0;
 }
 
 
 
 h1{
-    background-color:#FFD4DD;
+    background-color:#fdf8fb;
     height: 100px;
     font-family: Noto Serif JP;
     text-align: center;
