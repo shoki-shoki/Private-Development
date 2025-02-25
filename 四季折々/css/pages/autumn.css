@@ -94,7 +94,7 @@ li{
 /* 目次の開閉化 */
 .l_toc input[type="checkbox"]{
     display: none;
-}
+} 
 
 .toc_container{
     display: none;
