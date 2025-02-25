@@ -12,6 +12,7 @@
     
   }
   
+  
   /* モーダルコンテンツ */
   .modal {
     position: relative;
@@ -21,6 +22,8 @@
     min-width: 440px;
   }
   
+
+  /*モーダルコンテンツの箱の配置編集*/
   .modal__inner {
     margin-top: 125px;
     margin-bottom: 125px;
@@ -34,7 +37,8 @@
     padding: 21px 8px 21px;
     height: auto;
   }
-  
+
+  /* モーダルコンテンツの中身の配置 */
   .modal__content {
     padding-top: 15px;
     padding-bottom: 23px;
@@ -44,28 +48,66 @@
     margin-left:280px;
   }
 
+  /* モーダルコンテンツの画像サイズ＆配置 */
   .modal__content img{
     width:400px;
     margin-top:100px;
   }
 
+  /* モーダルコンテンツのテキストのサイズと配置 */
   .modal__content p{
     width:500px;
     margin-top:150px;
     margin-left: 50px;
   }
 
-
+/* 各写真と文章を横に配置 */
   .spring_food1{
     display: flex;
   }
-  
   .spring_food2{
     display: flex;
   }
-
   .spring_food3{
     display: flex;
+  }
+
+
+/*×ボタンを作る*/
+.modal__button-wrap {
+    position: absolute;
+    right: -9px;
+    top: -10px;
+  }
+  
+.close-button {
+    position: relative;
+    width: 39px;
+    height: 39px;
+    background: gray;
+    border-radius: 50%;
+    padding: 0;
+    border: transparent;
+    cursor: pointer;
+  }
+  
+.close-button span {
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    left: calc(50% - 13px);
+    top: 50%;
+    border-radius: 20px;
+  }
+  
+.close-button span:nth-child(1) {
+    transform: rotate(45deg) translate(-1px, -1px);
+  }
+  
+.close-button span:nth-child(2) {
+    transform: rotate(-45deg) translate(1px, -1px);
   }
   
 
