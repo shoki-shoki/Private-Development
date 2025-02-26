@@ -1,7 +1,7 @@
 
 
 /* グレー背景 */
-.layer {
+.layer1 {
     background: rgba(0, 0, 0, .2); /* 背景を薄くする */
     width: 100%;
     height: 100%;
@@ -20,7 +20,7 @@
   
   
   /* モーダルコンテンツ */
-  .modal {
+  .modal1 {
     position: relative;
     margin-right: auto;
     margin-left: auto;
@@ -31,22 +31,14 @@
     opacity: 0;
     visibility: hidden;
 
+    transition: visibility 0.5s linear, opacity 0.5s linear;
+
   }
 
 
-  .layer.is-open {
-    z-index: 999;
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  .layer.is-open .modal{
-    opacity: 1;
-    visibility: visible;
-  }
 
   /*モーダルコンテンツの箱の配置編集*/
-  .modal__inner {
+    .modal__inner1 {
     margin-top: 125px;
     margin-bottom: 125px;
     position: relative;
@@ -61,7 +53,7 @@
   }
 
   /* モーダルコンテンツの中身の配置 */
-  .modal__content {
+  .modal__content1 {
     padding-top: 15px;
     padding-bottom: 23px;
     font-size:25px;
@@ -71,17 +63,35 @@
   }
 
   /* モーダルコンテンツの画像サイズ＆配置 */
-  .modal__content img{
+  .modal__content1 img{
     width:400px;
     margin-top:100px;
+    border-radius: 5px;
   }
 
   /* モーダルコンテンツのテキストのサイズと配置 */
-  .modal__content p{
+  .modal__content1 p{
     width:500px;
     margin-top:150px;
     margin-left: 50px;
   }
+
+
+
+
+  .layer1.is-open {
+    z-index: 999;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .layer1.is-open .modal1{
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+
 
 /* 各写真と文章を横に配置 */
   .spring_food1{
@@ -96,13 +106,13 @@
 
 
 /*×ボタンを作る*/
-.modal__button-wrap {
+.modal__button-wrap1 {
     position: absolute;
     right: -9px;
     top: -10px;
   }
   
-.close-button {
+.close-button1 {
     position: relative;
     width: 39px;
     height: 39px;
@@ -113,7 +123,7 @@
     cursor: pointer;
   }
   
-.close-button span {
+.close-button1 span {
     width: 25px;
     height: 2px;
     background: #fff;
@@ -124,13 +134,163 @@
     border-radius: 20px;
   }
   
-.close-button span:nth-child(1) {
+.close-button1 span:nth-child(1) {
     transform: rotate(45deg) translate(-1px, -1px);
   }
   
-.close-button span:nth-child(2) {
+.close-button1 span:nth-child(2) {
     transform: rotate(-45deg) translate(1px, -1px);
   }
+
+
+
+
+
+
+  /* グレー背景 */
+.layer2 {
+  background: rgba(0, 0, 0, .2); /* 背景を薄くする */
+  width: 100%;
+  height: 100%;
+  position: fixed; /* 画面に固定するために指定 */
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+
+
+  /*非表示状態*/
+  z-index:-1;
+  opacity:0;
+  visibility: hidden;
+  
+}
+
+
+/* モーダルコンテンツ */
+.modal2 {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  min-width: 440px;
+
+  /*非表示状態*/
+  opacity: 0;
+  visibility: hidden;
+
+  transition: visibility 0.5s linear, opacity 0.5s linear;
+
+}
+
+
+
+/*モーダルコンテンツの箱の配置編集*/
+.modal__inner2 {
+  margin-top: 125px;
+  margin-bottom: 125px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);/* モーダルにシャドウをかける */
+  border-radius: 13px; /* モーダルの角を丸める */
+  display: block;
+  padding: 21px 8px 21px;
+  height: auto;
+}
+
+/* モーダルコンテンツの中身の配置 */
+.modal__content2 {
+  padding-top: 15px;
+  padding-bottom: 23px;
+  font-size:25px;
+  gap:30px;
+  margin-top:75px;
+  margin-left:280px;
+}
+
+/* モーダルコンテンツの画像サイズ＆配置 */
+.modal__content2 img{
+  width:400px;
+  margin-top:100px;
+  border-radius: 5px;
+}
+
+/* モーダルコンテンツのテキストのサイズと配置 */
+.modal__content2 p{
+  width:500px;
+  margin-top:150px;
+  margin-left: 50px;
+}
+
+
+
+
+.layer2.is-open {
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+}
+
+.layer2.is-open .modal2{
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+/* 各写真と文章を横に配置 */
+.spring_event1{
+  display: flex;
+}
+.spring_event2{
+  display: flex;
+}
+.spring_event3{
+  display: flex;
+}
+
+
+/*×ボタンを作る*/
+.modal__button-wrap2 {
+  position: absolute;
+  right: -9px;
+  top: -10px;
+}
+
+.close-button2 {
+  position: relative;
+  width: 39px;
+  height: 39px;
+  background: gray;
+  border-radius: 50%;
+  padding: 0;
+  border: transparent;
+  cursor: pointer;
+}
+
+.close-button2 span {
+  width: 25px;
+  height: 2px;
+  background: #fff;
+  display: inline-block;
+  position: absolute;
+  left: calc(50% - 13px);
+  top: 50%;
+  border-radius: 20px;
+}
+
+.close-button2 span:nth-child(1) {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.close-button2 span:nth-child(2) {
+  transform: rotate(-45deg) translate(1px, -1px);
+}
+
+
+
   
 
 
@@ -231,10 +391,14 @@ li{
 }
 
 .toc_container{
-    display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
 }
 
 #tocopen:checked + .toc_container {
+    visibility: visible;
+    opacity: 1;
     color: black;
     display: block;
     margin: 9px auto;

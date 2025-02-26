@@ -22,154 +22,197 @@
     <title>四季折々</title>
 
 </head>
+
+
+
 <body>
-    <h1>四季折々</h1>
-
-<img src="images\1.spring\spring banner.jpg">
-
-
-<div class="lay">
-    <!--cssグリッドてタイル表示-->
-    <main class="grid">
-
-        <button class="button js-modal-button1"><div class="item1"><img src="images\1.spring\food\spring food.jpg" alt=""><p>ー　食　－</p></div></button>
-        <button class="button js-modal-button2"><div class="item2"><img src="images\1.spring\event\spring event.jpg" alt=""><p>ー　催　－</p></div></button>
-    </main>
+    <!--ヘッダー-->
+    <h1>四季折々</h1> 
 
 
-    <!--目次を作成-->
-    <div class="l_toc">
-        <label for="tocopen">目次[開く]</label>
-        <input id="tocopen" type="checkbox">
-        <ol class="toc_container">
-
-        <!--春-->
-             <summary>【春】</summary>
-                 <details>
-                    <summary>[食]</summary>
-                        &emsp;&emsp;<a href="">・たけのこ</a><br>
-                        &emsp;&emsp;<a href="">・鯛</a><br>
-                        &emsp;&emsp;<a href="">・苺</a><br>
-                 </details>
-                 <details>
-                     <summary>[催]</summary>
-                        &emsp;&emsp;<a href="">・花見</a><br>
-                         &emsp;&emsp;<a href="">・ゴールデンウイーク</a><br>
-                         &emsp;&emsp;<a href="">・新生活</a><br>
-                 </details><br>
-
-                 
+    <!--バナー画像-->
+    <img src="images\1.spring\spring banner.jpg">
 
 
-        <!--夏-->
-            <summary>【夏】</summary>
-            <details>
-                <summary>[食]</summary>
-                &emsp;&emsp;<a href="">・そうめん</a><br>
-                &emsp;&emsp;<a href="">・スイカ</a><br>
-                &emsp;&emsp;<a href="">・スイーツ</a><br>
-            </details>
-            <details>
-                <summary>[催]</summary>
-                &emsp;&emsp;<a href="">・海</a><br>
-                &emsp;&emsp;<a href="">・花火</a><br>
-                &emsp;&emsp;<a href="">・BBQ</a><br>
-            </details><br>
+    <div class="lay">
+        <!--cssグリッドてタイル表示-->
+        <main class="grid">
+            <!--画像をモーダルウィンドウ用のボタン化-->
+            <button class="button js-modal-button1"><div class="item1"><img src="images\1.spring\food\spring food.jpg" alt=""><p>ー　食　－</p></div></button>
+            <button class="button js-modal-button2"><div class="item2"><img src="images\1.spring\event\spring event.jpg" alt=""><p>ー　催　－</p></div></button>
+        </main>
 
-            
-        <!--秋-->
-            <summary>【秋】</summary>
-            <details>
-                <summary>[食]</summary>
-                &emsp;&emsp;<a href="">・芋</a><br>
-                &emsp;&emsp;<a href="">・栗</a><br>
-                &emsp;&emsp;<a href="">・秋刀魚</a><br>
-            </details>
-            <details>
-                <summary>[催]</summary>
-                &emsp;&emsp;<a href="">・紅葉狩り</a><br>
-                &emsp;&emsp;<a href="">・ハロウィン</a><br>
-                &emsp;&emsp;<a href="">・読書</a><br>
-            </details><br>
+        <!--目次を作成-->
+        <div class="l_toc">
+            <label for="tocopen">目次[開く]</label>
+            <!--✓ボックスを作成(開閉用)-->
+            <input id="tocopen" type="checkbox">
+
+            <!--目次の中身-->
+            <ol class="toc_container">
+
+                 <!--春-->
+                 <summary>【春】</summary>
+                    <details>
+                        <summary>[食]</summary>
+                            &emsp;&emsp;<a href="">・たけのこ</a><br>
+                            &emsp;&emsp;<a href="">・鯛</a><br>
+                            &emsp;&emsp;<a href="">・苺</a><br>
+                    </details>
+                    <details>
+                         <summary>[催]</summary>
+                            &emsp;&emsp;<a href="">・花見</a><br>
+                            &emsp;&emsp;<a href="">・ゴールデンウイーク</a><br>
+                            &emsp;&emsp;<a href="">・新生活</a><br>
+                    </details><br>
+
+                <!--夏-->
+                <summary>【夏】</summary>
+                    <details>
+                        <summary>[食]</summary>
+                            &emsp;&emsp;<a href="">・そうめん</a><br>
+                            &emsp;&emsp;<a href="">・スイカ</a><br>
+                            &emsp;&emsp;<a href="">・スイーツ</a><br>
+                    </details>
+                    <details>
+                        <summary>[催]</summary>
+                            &emsp;&emsp;<a href="">・海</a><br>
+                            &emsp;&emsp;<a href="">・花火</a><br>
+                             &emsp;&emsp;<a href="">・BBQ</a><br>
+                    </details><br>
+
+                <!--秋-->
+                <summary>【秋】</summary>
+                    <details>
+                         <summary>[食]</summary>
+                            &emsp;&emsp;<a href="">・芋</a><br>
+                            &emsp;&emsp;<a href="">・栗</a><br>
+                            &emsp;&emsp;<a href="">・秋刀魚</a><br>
+                    </details>
+                    <details>
+                        <summary>[催]</summary>
+                            &emsp;&emsp;<a href="">・紅葉狩り</a><br>
+                            &emsp;&emsp;<a href="">・ハロウィン</a><br>
+                            &emsp;&emsp;<a href="">・読書</a><br>
+                    </details><br>
   
-        <!--冬-->
-            <summary>【冬】</summary>
-            <details>
-                <summary>[食]</summary>
-                &emsp;&emsp;<a href="">・鍋</a><br>
-                &emsp;&emsp;<a href="">・餅</a><br>
-                &emsp;&emsp;<a href="">・蟹</a><br>
-            </details>
-            <details>
-                <summary>[催]</summary>
-                &emsp;&emsp;<a href="">・雪</a><br>
-                &emsp;&emsp;<a href="">・クリスマス</a><br>
-                &emsp;&emsp;<a href="">・初詣</a><br>
-            </details><br>
-        </ol>
+                <!--冬-->
+                <summary>【冬】</summary>
+                    <details>
+                        <summary>[食]</summary>
+                            &emsp;&emsp;<a href="">・鍋</a><br>
+                            &emsp;&emsp;<a href="">・餅</a><br>
+                            &emsp;&emsp;<a href="">・蟹</a><br>
+                    </details>
+                    <details>
+                        <summary>[催]</summary>
+                            &emsp;&emsp;<a href="">・雪</a><br>
+                            &emsp;&emsp;<a href="">・クリスマス</a><br>
+                            &emsp;&emsp;<a href="">・初詣</a><br>
+                    </details><br>
+            </ol>
+        </div>
     </div>
-</div>
 
+    <br>
 
-<br>
-
+    <!--検索フォーム作成 ※URL取得してないため、検索不可。URLを取得した際に、サイト内検索ができるよう設置。-->
     <form action="http://www.google.co.jp/search" method="get" class="search-container">
         <input type="search" name="search" placeholder="キーワードを入力">
         <input type="submit" name="submit" value="検索">
         <a href="file:///E:/Programing/Private%20development/%E5%9B%9B%E5%AD%A3%E6%8A%98%E3%80%85/index.html">TOPページへ</a>
     </form>
+    
 </div>
 
 
-<div class="layer js-modal">
-    <div class="modal">
-      <div class="modal__inner">
-        <div class="modal__button-wrap">
-            <button class="close-button js-close-button1">
-              <span></span>
-              <span></span>
-            </button>
-           </div>
-
-
-        <div class="modal__contents">
-          <div class="modal__content">
-
-                <div class="spring_food1">
-                     <img src="images\1.spring\food\takenoko.jpg">
-                    <p> 春の味覚・たけのこは、採れたてが命。アクが強いので、収穫後はすぐに米ぬかで下茹でするのがポイントです。<br>
-                        シンプルにお刺身で味わったり、炊き込みご飯や天ぷらにすると、香りと食感を存分に楽しめます。<br>
-                        焼きたけのこに味噌をつけるのもおすすめ！旬の短い食材なので、春のうちに存分に味わいましょう。<br>
-                    </p>
+<!--モーダルウィンドウ(食)-->
+    <div class="layer1 js-modal1">
+        <div class="modal1">
+            <div class="modal__inner1">
+                <div class="modal__button-wrap1">
+                    <button class="close-button1 js-close-button1">
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
 
-                <div class="spring_food2">
-                    <img src="images\1.spring\food\tai.jpg">
-                    <p>春の鯛は「桜鯛」とも呼ばれ、産卵前で身が引き締まり旨みたっぷり。<br>
-                        刺身やカルパッチョはもちろん、塩焼きや鯛めしにすると、ふっくらとした食感と上品な甘みを楽しめます。<br>
-                        鯛の骨で出汁を取ると、絶品の潮汁にも！春ならではの味わいを堪能しましょう。<br>
-                    </p>
+                <div class="modal__contents1">
+                    <div class="modal__content1">
+                        <div class="spring_food1">
+                            <img src="images\1.spring\food\takenoko.jpg">
+                            <p>　　　　　　　　「たけのこ」<br><br>
+                                春の味覚・たけのこは、採れたてを素早く茹でるとアクが抜けて美味しくなります。<br>
+                                炊き込みご飯や天ぷらにすると、旬の香りが存分に楽しめますよ。<br>
+                            </p>
+                        </div>
+
+                        <div class="spring_food2">
+                            <img src="images\1.spring\food\tai.jpg">
+                            <p>　　　　　　　　　「鯛」<br><br>
+                                春の鯛は「桜鯛」と呼ばれ、旨みがたっぷり。刺身や鯛めし、塩焼きがおすすめです。<br>
+                                骨からとる出汁で潮汁を作ると、上品な味わいが楽しめます。<br>
+                            </p>
+                        </div>
+
+                        <div class="spring_food3">
+                            <img src="images\1.spring\food\itigo.jpg">
+                            <p>　　　　　　　　「いちご」<br><br>
+                                春が旬のいちごは、甘みと酸味のバランスが絶妙。練乳をかけたり、ヨーグルトと一緒に食べると美味しさアップ！<br>
+                                フレッシュなまま味わうのもおすすめです。<br>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-
-
-                <div class="spring_food3">
-                    <img src="images\1.spring\food\itigo.jpg">
-                    <p> 桜が咲き誇る春のお花見は、食事やお酒を楽しみながら春を満喫できる絶好の機会。<br>
-                        お弁当には、彩り豊かなちらし寿司や、春の食材を使った天ぷらがぴったりです。<br>
-                        夜桜を楽しむなら、温かいお茶や甘酒を持参すると冷え対策にも◎。シートやクッションを持って行けば、より快適に過ごせますよ。<br>
-                    </p>
-                </div>
-           
-            <br>
-
-          </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
+    
+
+<!--モーダルウィンドウ(催)-->
+    <div class="layer2 js-modal2">
+        <div class="modal2">
+            <div class="modal__inner2">
+                <div class="modal__button-wrap2">
+                    <button class="close-button2 js-close-button2">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+
+                <div class="modal__contents2">
+                    <div class="modal__content2">
+                        <div class="spring_event1">
+                            <img src="images\1.spring\event\sakura2.jpg">
+                            <p>　　　　　　　　　「花見」<br><br>
+                                桜の下で楽しむお花見は春の風物詩。お弁当やお団子を持参すると、さらに気分が盛り上がります。<br>
+                                夜桜を楽しむなら温かい飲み物を用意すると◎。<br>
+                            </p>
+                        </div>
+
+                        <div class="spring_event2">
+                            <img src="images\1.spring\event\nyugaku.jpg">
+                            <p>　　　　　　　　「新生活」<br><br>
+                                新しい環境に慣れる春。お気に入りの文房具やインテリアを取り入れると、気分もアップ！<br>
+                                朝のルーティンを決めて、心地よい毎日をスタートさせましょう。<br>
+                            </p>
+                        </div>
+
+                        <div class="spring_event3">
+                            <img src="images\1.spring\event\GW.jpg">
+                            <p>　　　　　「ゴールデンウイーク」<br><br>
+                                旅行やアウトドア、家でのんびり過ごすなど楽しみ方はいろいろ。<br>
+                                混雑を避けたいなら、事前に穴場スポットをリサーチして計画を立てるのがポイント！<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
 
 
-    
 </body>
 </html>
