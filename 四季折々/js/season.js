@@ -32,3 +32,4 @@ modalButton2.addEventListener('click', () => {
 modalClose2.addEventListener('click', () => { // xボタンをクリックしたときのイベントを登録
   modal2.classList.remove('is-open'); 
 });
+

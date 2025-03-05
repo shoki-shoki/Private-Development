@@ -57,6 +57,8 @@ body{
 /* 検索ボックスの枠線追加 */
 input{
     border: 1px gray solid;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
 

@@ -1,38 +1,329 @@
 
 
+/*モーダルウィンドウスタイル(食)*/
 
-/* bodyの背景とフォントを変更 */
-body{
+  /* グレー背景 */
+    .layer1 {
+      background: rgba(0, 0, 0, .2); /* 背景を薄くする */
+      width: 100%;
+      height: 100%;
+      position: fixed; /* 画面に固定するために指定 */
+      top: 0;
+      left: 0;
+      overflow-y: auto;
+
+    /*非表示状態*/
+      z-index:-1;
+      opacity:0;
+      visibility: hidden;
+    }
+
+
+  /*モーダルコンテンツの箱の配置編集*/
+    .modal__inner1 {
+      margin-top: 125px;
+      margin-bottom: 125px;
+      position: relative; /*親要素を基準に位置決定(親要素と位置がズレづらくなる)*/
+      margin-left: auto;  /*水平方向の中央配置*/
+      margin-right: auto;
+      background: rgba(255, 255, 255, 0.9); /*半透明の白背景色へ変更*/
+      box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 13px; 
+      display: block;
+    }
+
+
+  /* モーダルコンテンツの中身の配置 */
+    .modal__content1 {
+      font-size:25px;
+      gap:30px;
+      margin-top:75px;
+      margin-left:280px;
+    }
+  
+
+  /* モーダルコンテンツの中身 */
+    .modal1 {
+      position: relative;
+      margin-right: auto;
+      margin-left: auto;
+      width: 80%;
+      min-width: 440px;
+
+    /*非表示状態*/
+      opacity: 0;
+      visibility: hidden;
+      transition: visibility 0.5s linear, opacity 0.5s linear;
+    }
+
+
+  /* モーダルコンテンツの画像サイズ＆配置 */
+    .modal__content1 img{
+      width:400px;
+      margin-top:100px;
+      margin-bottom:75px;
+      border-radius: 5px;
+    }
+
+  
+  /* モーダルコンテンツのテキストのX方向のサイズと配置 */
+    .modal__content1 p{
+      width:500px;
+      margin-top:150px;
+      margin-left: 50px;
+    }
+
+
+  /* 各写真と文章を横に配置 */
+    .season_food1{
+      display: flex;
+    }
+    .season_food2{
+      display: flex;
+    }
+    .season_food3{
+      display: flex;
+    }
+
+
+  /*表示ボタン(画像)クリック後の表示設定*/
+    .layer1.is-open {
+      z-index: 999;
+      opacity: 1;
+      visibility: visible;
+    }
+  
+    .layer1.is-open .modal1{
+      opacity: 1;
+      visibility: visible;
+    }
+
+
+  /*×ボタンの位置調整*/
+    .modal__button-wrap1 {
+      position: absolute;
+      right: -9px;
+      top: -10px;
+    }
+  
+  /*×ボタンの背景作成*/
+    .close-button1 {
+      position: relative;
+      width: 39px;
+      height: 39px;
+      background: gray;
+      border-radius: 50%;
+      padding: 0;
+      border: transparent;
+      cursor: pointer;
+    }
+  
+  /*×模様の配置＆色調整*/
+    .close-button1 span {
+      width: 25px;
+      height: 2px;
+      background: #fff;
+      display: inline-block;
+      position: absolute;
+      left: calc(50% - 13px);
+      top: 50%;
+      border-radius: 20px;
+    }
+  
+  /*×模様作成1*/
+    .close-button1 span:nth-child(1) {
+      transform: rotate(45deg) translate(-1px, -1px);
+    }
+  
+  /*×模様作成1*/
+    .close-button1 span:nth-child(2) {
+      transform: rotate(-45deg) translate(1px, -1px);
+    }
+
+
+
+
+
+/*モーダルウィンドウスタイル(催)*/
+
+  /* グレー背景 */
+    .layer2 {
+      background: rgba(0, 0, 0, .2); /* 背景を薄くする */
+      width: 100%;
+      height: 100%;
+      position: fixed; /* 画面に固定するために指定 */
+      top: 0;
+      left: 0;
+      overflow-y: auto;
+
+    /*非表示状態*/
+      z-index:-1;
+      opacity:0;
+      visibility: hidden;
+    }
+
+
+  /* モーダルコンテンツ */
+    .modal2 {
+      position: relative;
+      margin-right: auto;
+      margin-left: auto;
+      width: 80%;
+      min-width: 440px;
+
+  /*非表示状態*/
+      opacity: 0;
+      visibility: hidden;
+      transition: visibility 0.5s linear, opacity 0.5s linear;
+      }
+
+
+  /*モーダルコンテンツの箱の配置編集*/
+    .modal__inner2 {
+      margin-top: 125px;
+      margin-bottom: 125px;
+      position: relative; /*親要素を基準に位置決定(親要素と位置がズレづらくなる)*/
+      margin-left: auto;  /*水平方向の中央配置*/
+      margin-right: auto;
+      background: rgba(255, 255, 255, 0.9); /*半透明の白背景色へ変更*/
+      box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 13px; 
+      display: block;
+    }
+
+
+  /* モーダルコンテンツの中身の配置 */
+    .modal__content2 {
+      font-size:25px;
+      gap:30px;
+      margin-top:75px;
+      margin-left:280px;
+    }   
+
+
+  /* モーダルコンテンツの画像サイズ＆配置 */
+    .modal__content2 img{
+      width:400px;
+      margin-top:100px;
+      margin-bottom:75px;
+      border-radius: 5px;
+    }
+
+
+  /* モーダルコンテンツのテキストのX方向のサイズと配置 */
+    .modal__content2 p{
+      width:500px;
+      margin-top:150px;
+      margin-left: 50px;
+    }
+  
+
+  /* 各写真と文章を横に配置 */
+    .season_event1{
+      display: flex;
+    }
+    .season_event2{
+      display: flex;
+    }
+    .season_event3{
+      display: flex;
+    }
+
+
+  /*表示ボタン(画像)クリック後の表示設定*/
+    .layer2.is-open {
+      z-index: 999;
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .layer2.is-open .modal2{
+      opacity: 1;
+      visibility: visible;
+    }
+
+
+  /*×ボタンの位置調整*/
+    .modal__button-wrap2 {
+      position: absolute;
+      right: -9px;
+      top: -10px;
+    }
+
+  /*×ボタンの背景作成*/
+    .close-button2 {
+      position: relative;
+      width: 39px;
+      height: 39px;
+      background: gray;
+      border-radius: 50%;
+      padding: 0;
+      border: transparent;
+      cursor: pointer;
+    }
+
+  /*×模様の配置＆色調整*/
+    .close-button2 span {
+      width: 25px;
+      height: 2px;
+      background: #fff;
+      display: inline-block;
+      position: absolute;
+      left: calc(50% - 13px);
+      top: 50%;
+      border-radius: 20px;
+    }
+
+  /*×模様作成1*/
+    .close-button2 span:nth-child(1) {
+      transform: rotate(45deg) translate(-1px, -1px);
+    }
+
+  /*×模様作成1*/
+    .close-button2 span:nth-child(2) {
+      transform: rotate(-45deg) translate(1px, -1px);
+    }
+
+
+
+
+
+/* bodyスタイル*/
+  body{
     font-family: Noto Serif JP;
     background-color:#BDDEEC ;
-}
+  }
 
 
 
-/* 写真をタイル型レイアウトで表示 */
-.grid {
-    max-width: 1100px; 
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px; 
-    text-align: center;
-    font-size: 20px;
-}
+
+/* タイル型レイアウトスタイル*/
+
+  /* 写真をタイル型レイアウトで表示 */
+    .grid {
+      max-width: 1100px; 
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px; 
+      text-align: center;
+      font-size: 20px;
+  }
+
+
+  /* タイル型レイアウトの写真の編集*/
+    .grid img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+  }
 
 
 
-/* タイル型レイアウトの写真の編集*/
-.grid img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
 
 
-
-/*タイル型レイアウトと目次を横一列で表示*/
-.lay {
+ /*タイル型レイアウトと目次を横一列で表示*/
+  .lay {
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -42,75 +333,93 @@ body{
     margin-left: 200px;
     font-family: Noto Serif JP;
     color: white;
-}
-
-
-
-/* 検索フォームのスタイル */
-.search-container{
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    gap: 20px;
-}
-
-/* 検索ボックスの枠線追加 */
-input{
-    border: 1px gray solid;
   }
 
 
 
-/* 目次の位置設定 */
-.l_toc {
-    width: 15%; /* 2:1 の比率 */
-    padding: 20px;
-    text-align:start;
-    margin-top:-5px ;
-    margin-left: 100px;
-}
+
+
+/*検索フォームスタイル*/
+
+/* 検索フォームのスタイル */
+  .search-container{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+  }
+
+  /* 検索ボックスの枠線追加 */
+  input{
+    border: 1px gray solid;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+
+
+    
+
+
+/*目次スタイル*/
+
+  /* 目次の位置設定 */
+    .l_toc {
+      width: 15%; 
+      padding: 20px;
+      text-align:start;
+      margin-top:-5px ;
+      margin-left: 100px;
+    }
 
 
 
 /* 目次ボタンの編集 */
-label{
-    border: 1px solid gray;
-    background-color: #e4f6fd;
-    color: black;
-    padding: 10px;
-    width: auto;
-}
-
+  label{
+      border: 1px solid gray;
+      background-color: #e4f6fd;
+      color: black;
+      padding: 10px;
+      width: auto;
+  }
 
 
 /* 目次中身の編集 */
-li{
-    border: 0.5px solid #242424;
-    text-align: center;
-}
-
+  li{
+      border: 0.5px solid #242424;
+      text-align: center;
+  }
 
 
 /* 目次の開閉化 */
-.l_toc input[type="checkbox"]{
-    display: none;
-}
-
-.toc_container{
-    display: none;
-}
-
-#tocopen:checked + .toc_container {
-    color: black;
-    display: block;
-    margin: 9px auto;
-    padding: 45px;
-    width: 300px;
-    border: 1px solid gray;   
-    background-color: #e4f6fd;
-}
+  .l_toc input[type="checkbox"]{
+      display: none;
+  }
 
 
+  .toc_container{
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+  }
+
+  #tocopen:checked + .toc_container {
+      visibility: visible;
+      opacity: 1;
+      color: black;
+      display: block;
+      margin: 9px auto;
+      padding: 45px;
+      width: 300px;
+      border: 1px solid gray;   
+      background-color: #e4f6fd;
+  }
+
+
+
+
+
+/*ヘッダースタイル*/
 
 h1{
     background-color:#BDDEEC;
@@ -119,3 +428,7 @@ h1{
     text-align: center;
     padding:25px;
 };
+
+
+
+  

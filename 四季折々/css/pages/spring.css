@@ -23,22 +23,18 @@
     .modal__inner1 {
       margin-top: 125px;
       margin-bottom: 125px;
-      position: relative;
-      margin-left: auto;
+      position: relative; /*親要素を基準に位置決定(親要素と位置がズレづらくなる)*/
+      margin-left: auto;  /*水平方向の中央配置*/
       margin-right: auto;
-      background: rgba(255, 255, 255, 0.9);
-      box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);/* モーダルにシャドウをかける */
-      border-radius: 13px; /* モーダルの角を丸める */
+      background: rgba(255, 255, 255, 0.9); /*半透明の白背景色へ変更*/
+      box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 13px; 
       display: block;
-      padding: 21px 8px 21px;
-      height: auto;
     }
 
 
   /* モーダルコンテンツの中身の配置 */
     .modal__content1 {
-      padding-top: 15px;
-      padding-bottom: 23px;
       font-size:25px;
       gap:30px;
       margin-top:75px;
@@ -65,11 +61,12 @@
     .modal__content1 img{
       width:400px;
       margin-top:100px;
+      margin-bottom:75px;
       border-radius: 5px;
     }
 
   
-  /* モーダルコンテンツのテキストのサイズと配置 */
+  /* モーダルコンテンツのテキストのX方向のサイズと配置 */
     .modal__content1 p{
       width:500px;
       margin-top:150px;
@@ -78,13 +75,13 @@
 
 
   /* 各写真と文章を横に配置 */
-    .spring_food1{
+    .season_food1{
       display: flex;
     }
-    .spring_food2{
+    .season_food2{
       display: flex;
     }
-    .spring_food3{
+    .season_food3{
       display: flex;
     }
 
@@ -185,22 +182,18 @@
     .modal__inner2 {
       margin-top: 125px;
       margin-bottom: 125px;
-      position: relative;
-      margin-left: auto;
+      position: relative; /*親要素を基準に位置決定(親要素と位置がズレづらくなる)*/
+      margin-left: auto;  /*水平方向の中央配置*/
       margin-right: auto;
-      background: rgba(255, 255, 255, 0.9);
-      box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);/* モーダルにシャドウをかける */
-      border-radius: 13px; /* モーダルの角を丸める */
+      background: rgba(255, 255, 255, 0.9); /*半透明の白背景色へ変更*/
+      box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 13px; 
       display: block;
-      padding: 21px 8px 21px;
-      height: auto;
     }
 
 
   /* モーダルコンテンツの中身の配置 */
     .modal__content2 {
-      padding-top: 15px;
-      padding-bottom: 23px;
       font-size:25px;
       gap:30px;
       margin-top:75px;
@@ -212,11 +205,12 @@
     .modal__content2 img{
       width:400px;
       margin-top:100px;
+      margin-bottom:75px;
       border-radius: 5px;
     }
 
 
-  /* モーダルコンテンツのテキストのサイズと配置 */
+  /* モーダルコンテンツのテキストのX方向のサイズと配置 */
     .modal__content2 p{
       width:500px;
       margin-top:150px;
@@ -225,13 +219,13 @@
   
 
   /* 各写真と文章を横に配置 */
-    .spring_event1{
+    .season_event1{
       display: flex;
     }
-    .spring_event2{
+    .season_event2{
       display: flex;
     }
-    .spring_event3{
+    .season_event3{
       display: flex;
     }
 
@@ -356,9 +350,11 @@
   }
 
   /* 検索ボックスの枠線追加 */
-    input{
-      border: 1px gray solid;
-    }
+  input{
+    border: 1px gray solid;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 
 
     
@@ -368,7 +364,7 @@
 
   /* 目次の位置設定 */
     .l_toc {
-      width: 15%; /* 2:1 の比率 */
+      width: 15%; 
       padding: 20px;
       text-align:start;
       margin-top:-5px ;
