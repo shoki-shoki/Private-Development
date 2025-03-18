@@ -1,0 +1,8 @@
+/* bodyの背景とフォントを変更 */
+body{
+  margin: 300px;
+  transform: scale(1.2);
+  font-family: Noto Serif JP;
+  background-color:#D5F4D5 ;
+  text-align: center;
+}
